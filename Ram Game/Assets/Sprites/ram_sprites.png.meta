@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: 440afbdea9a89334d976d99383cb0ab4
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: ram_sprites_0
+    21300002: ram_sprites_1
+    21300004: ram_sprites_2
+    21300006: ram_sprites_3
+    21300008: ram_sprites_4
+    21300010: ram_sprites_5
+    21300012: ram_sprites_6
+    21300014: ram_sprites_7
+    21300016: ram_sprites_8
+    21300018: ram_sprites_9
+    21300020: ram_sprites_10
+    21300022: ram_sprites_11
+    21300024: ram_sprites_12
+    21300026: ram_sprites_13
+    21300028: ram_sprites_14
+    21300030: ram_sprites_15
+    21300032: ram_sprites_16
+    21300034: ram_sprites_17
+    21300036: ram_sprites_18
+    21300038: ram_sprites_19
+    21300040: ram_sprites_20
+    21300042: ram_sprites_21
+    21300044: ram_sprites_22
+    21300046: ram_sprites_23
+    21300048: ram_sprites_24
+    21300050: ram_sprites_25
+    21300052: ram_sprites_26
+    21300054: ram_sprites_27
+    21300056: ram_sprites_28
+    21300058: ram_sprites_29
+    21300060: ram_sprites_30
+    21300062: ram_sprites_31
+    21300064: ram_sprites_32
+    21300066: ram_sprites_33
+    21300068: ram_sprites_34
+    21300070: ram_sprites_35
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,12 +76,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,9 +105,740 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ram_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 3565
+        width: 531
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b0e7685505380429e43678a2c0c7b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 3564
+        width: 9
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d057fc67d55163944b8f0ed47034b45e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 3531
+        width: 546
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3efcb8e96ec26b54e9ca08f02c848ed2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 3515
+        width: 616
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af06d03e347a36344890aa9775456e15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 3517
+        width: 696
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91281aac0f2811f4aa0c51426f9c6b45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 2809
+        y: 3521
+        width: 676
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a9a9974a291b440bc8ef14fb831057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2889
+        width: 654
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325e4e7db98b06d46ad7ab3c5bea6ff2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 2888
+        width: 630
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e61dcf0e4d1a74d9b6ea74dbe0f4ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 2891
+        width: 582
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5551e2c89ca55a418279e4dba9d76a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 2903
+        width: 548
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184edd308dd762c4ea52dd80688c85eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 2903
+        y: 2931
+        width: 530
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974096b3e75242a4681b4e74cc71f7ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 2362
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02614a3134db78348a29c7a893e1220a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 2360
+        width: 637
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cac5d3c19507341b2a3b3d4fdd6dc0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 2437
+        width: 701
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e43dcf0c78cdc943bdde89f35f6ba69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 2354
+        y: 2432
+        width: 727
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43967d76e13db5b4aa7fd3cf4c48653a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 2415
+        width: 748
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba435dbb54f6034e81f7a920fac32cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1815
+        width: 772
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb7283cbf622e94084127a8cba4ae40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_17
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1791
+        width: 788
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdaaf28772d780e43af8b2359819cf45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1784
+        width: 777
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80213c2d56383b24d972980343ef509b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 2547
+        y: 1783
+        width: 758
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52baa249b76c2064fb52eb33253727dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_20
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1205
+        width: 635
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027f86864cad34646bbd490e179f9ed5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_21
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1205
+        width: 530
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b2ed955e3c2c5419dbc6fb4db0c980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_22
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 1203
+        width: 530
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6074a325bf1bb540a7016277b69b5af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_23
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 1200
+        width: 530
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77061dbfef962b64880d6daf4d87299d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_24
+      rect:
+        serializedVersion: 2
+        x: 2815
+        y: 1200
+        width: 530
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e308d62303aa03d41a50a2ea4845c479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_25
+      rect:
+        serializedVersion: 2
+        x: 3470
+        y: 1198
+        width: 531
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca07499676d83f4eaa429f2be173275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_26
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 627
+        width: 532
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec55e82d4410c3419f1ee78eb49ba50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_27
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 624
+        width: 532
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d424e8155812794cb8d6364f3365a4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_28
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 627
+        width: 532
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b1365852cf1454e9192079b745f638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_29
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 628
+        width: 532
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc6d9c2558a25e46b80d3fa6bc33e0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_30
+      rect:
+        serializedVersion: 2
+        x: 2705
+        y: 630
+        width: 530
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7175a55ae2e8344827557143ed300c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_31
+      rect:
+        serializedVersion: 2
+        x: 3361
+        y: 631
+        width: 530
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e019e435320c0b642b3f5b74c22ccc09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_32
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 60
+        width: 531
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038d4b4ac071f6a42b4c828f909c6703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_33
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 61
+        width: 536
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce981e7beca2a64c82be5b8188d4ce4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_34
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 63
+        width: 532
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc50fb26731eef4a97f7ae723d78c09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ram_sprites_35
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 64
+        width: 532
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acaec15dbba1f78459f034404790bf93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
