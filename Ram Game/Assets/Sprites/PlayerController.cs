@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	public float speed; // default 8
-	public float jumpHeight; // default 12
+	public float speed = 8;
+	public float jumpHeight = 12;
 	public Transform feetPos;
 	public LayerMask groundLayer;
 
@@ -18,15 +18,23 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
+
 		moveInput = Input.GetAxisRaw ("Horizontal");
 		rb.velocity = new Vector2 (moveInput * speed, rb.velocity.y);
+
+		if (rb.velocity.x > 0) {
+			transform.localScale = new Vector3 (1, transform.localScale.y, transform.localScale.z);
+		}
+		if (rb.velocity.x < 0) {
+			transform.localScale = new Vector3 (-1, transform.localScale.y, transform.localScale.z);
+		}
 	}
 
 	void Update () {
 
 		isGrounded = Physics2D.OverlapBox (feetPos.position, feetPos.GetComponent<BoxCollider2D> ().size, 0, groundLayer);
 
-		if (isGrounded && Input.GetKeyDown (KeyCode.Space)) {
+		if (isGrounded && Input.GetAxis ("Vertical") > 0) {
 			rb.velocity = Vector2.up * jumpHeight;
 		}
 
