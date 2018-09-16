@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 	public float jumpHeight = 12;
 	public Transform feetPos;
 	public LayerMask groundLayer;
+	public Animator animator;
 
 	private Rigidbody2D rb;
 	private float moveInput;
@@ -21,12 +22,14 @@ public class PlayerController : MonoBehaviour {
 
 		moveInput = Input.GetAxisRaw ("Horizontal");
 		rb.velocity = new Vector2 (moveInput * speed, rb.velocity.y);
-
+		animator.SetFloat ("Speed", Mathf.Abs (moveInput));
 		if (rb.velocity.x > 0) {
+
 			transform.localScale = new Vector3 (1, transform.localScale.y, transform.localScale.z);
 		}
 		if (rb.velocity.x < 0) {
 			transform.localScale = new Vector3 (-1, transform.localScale.y, transform.localScale.z);
+
 		}
 	}
 
@@ -36,7 +39,10 @@ public class PlayerController : MonoBehaviour {
 
 		if (isGrounded && Input.GetAxis ("Vertical") > 0) {
 			rb.velocity = Vector2.up * jumpHeight;
+
 		}
+		animator.SetBool ("IsJumping", !isGrounded);
+	
 
 	}
 }
