@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour {
 
 		isGrounded = Physics2D.OverlapBox (feetPos.position, feetPos.GetComponent<BoxCollider2D> ().size, 0, groundLayer);
 
-		if (isGrounded && Input.GetAxis ("Vertical") > 0) {
+		if (isGrounded && (Input.GetAxis ("Vertical") > 0 || Input.GetButtonDown("Fire1"))) {
 			rb.velocity = Vector2.up * jumpHeight;
 
 		}
