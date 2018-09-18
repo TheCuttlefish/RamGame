@@ -7858,7 +7858,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72f81b23b48b4e8469c7c05a4e2c2835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 6
+  dash: 6
   jumpHeight: 10
   feetPos: {fileID: 634323872}
   groundLayer:
