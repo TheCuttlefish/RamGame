@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate () {
 
-		moveInput = Input.GetAxisRaw ("Horizontal");
+		moveInput = Input.GetAxisRaw("Horizontal");
 		rb.velocity = new Vector2 ((moveInput * speed) + internal_dash, rb.velocity.y);
 		animator.SetFloat ("Speed", Mathf.Abs (moveInput));
 
