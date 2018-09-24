@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
 	public LayerMask groundLayer;
 	public Animator animator;
 	public bool isDashing = false;
-
+	
 	private float internal_dash;
 	private Rigidbody2D rb;
 	private float moveInput;
