@@ -10,13 +10,12 @@ public class PlayerController : MonoBehaviour {
 	public Transform feetPos;
 	public LayerMask groundLayer;
 	public Animator animator;
-	public bool isDashing = false;
-	
+	public bool allowDash = true;
+
 	private float internal_dash;
 	private Rigidbody2D rb;
 	private float moveInput;
 	private bool isGrounded;
-	private bool allowDash = true;
 	private int dashDuration = 15;
 	private int dashCounter;
 	void Start () {
@@ -24,11 +23,18 @@ public class PlayerController : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D> ();
 	}
 
-	void FixedUpdate () {
+	void Update () {
+		
+		Movement ();
+		Jump ();
+		Dash ();
+		Animations ();
+	}
+
+	void Movement () {
 
 		moveInput = Input.GetAxisRaw ("Horizontal");
 		rb.velocity = new Vector2 ((moveInput * speed) + internal_dash, rb.velocity.y);
-		animator.SetFloat ("Speed", Mathf.Abs (moveInput));
 
 		if (rb.velocity.x > 0) {
 			transform.localScale = new Vector3 (1, transform.localScale.y, transform.localScale.z);
@@ -37,9 +43,8 @@ public class PlayerController : MonoBehaviour {
 			transform.localScale = new Vector3 (-1, transform.localScale.y, transform.localScale.z);
 		}
 
-		isDashing = !allowDash;
-
 	}
+
 	void Jump () {
 
 		if (isGrounded && Input.GetButtonDown ("Jump")) {
@@ -47,15 +52,15 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		isGrounded = Physics2D.OverlapBox (feetPos.position, feetPos.GetComponent<BoxCollider2D> ().size, 0, groundLayer);
-		animator.SetBool ("IsJumping", !isGrounded);
+
 	}
-	void DashAttack () {
+	void Dash () {
+
 		if (Input.GetButtonDown ("Dash") && allowDash) {
+
 			allowDash = false;
 			dashCounter = 0;
-
 			internal_dash = dash * transform.localScale.x;
-
 		}
 
 		if (dashCounter < dashDuration) {
@@ -65,12 +70,13 @@ public class PlayerController : MonoBehaviour {
 			allowDash = true;
 		}
 
-		animator.SetBool ("isDashing", !allowDash);
 	}
 
-	void Update () {
-		Jump ();
-		DashAttack ();
+	void Animations () {
+
+		animator.SetFloat ("Speed", Mathf.Abs (moveInput));
+		animator.SetBool ("IsJumping", !isGrounded);
+		animator.SetBool ("isDashing", !allowDash);
 	}
 
 }

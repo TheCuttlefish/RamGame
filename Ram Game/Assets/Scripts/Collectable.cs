@@ -15,6 +15,7 @@ public class Collectable : MonoBehaviour {
 	void OnTriggerStay2D (Collider2D other) {
 
 		if (other.transform.tag == "Player") {
+			StarCounter.collectedStars++;
 			Instantiate (particles, transform.position, Quaternion.identity);
 			Destroy (gameObject);
 		}
