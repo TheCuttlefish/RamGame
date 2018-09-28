@@ -12,12 +12,13 @@ public class PlayerController : MonoBehaviour {
 	public Animator animator;
 	public bool allowDash = true;
 
-	private float internal_dash;
+	private float dashIntensity;
 	private Rigidbody2D rb;
 	private float moveInput;
 	private bool isGrounded;
 	private int dashDuration = 15;
 	private int dashCounter;
+
 	void Start () {
 
 		rb = GetComponent<Rigidbody2D> ();
@@ -34,7 +35,7 @@ public class PlayerController : MonoBehaviour {
 	void Movement () {
 
 		moveInput = Input.GetAxisRaw ("Horizontal");
-		rb.velocity = new Vector2 ((moveInput * speed) + internal_dash, rb.velocity.y);
+		rb.velocity = new Vector2 ((moveInput * speed) + dashIntensity, rb.velocity.y);
 
 		if (rb.velocity.x > 0) {
 			transform.localScale = new Vector3 (1, transform.localScale.y, transform.localScale.z);
@@ -46,13 +47,12 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Jump () {
+		
+		isGrounded = Physics2D.OverlapBox (feetPos.position, feetPos.GetComponent<BoxCollider2D> ().size, 0, groundLayer);
 
 		if (isGrounded && Input.GetButtonDown ("Jump")) {
 			rb.velocity = Vector2.up * jumpHeight;
 		}
-
-		isGrounded = Physics2D.OverlapBox (feetPos.position, feetPos.GetComponent<BoxCollider2D> ().size, 0, groundLayer);
-
 	}
 	void Dash () {
 
@@ -60,13 +60,13 @@ public class PlayerController : MonoBehaviour {
 
 			allowDash = false;
 			dashCounter = 0;
-			internal_dash = dash * transform.localScale.x;
+			dashIntensity = dash * transform.localScale.x;
 		}
 
 		if (dashCounter < dashDuration) {
 			dashCounter++;
 		} else {
-			internal_dash = 0;
+			dashIntensity = 0;
 			allowDash = true;
 		}
 
