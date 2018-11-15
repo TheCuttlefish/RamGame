@@ -8,7 +8,6 @@ public class Collectable : MonoBehaviour {
 
 	void Update () {
 		transform.localPosition = new Vector3 (transform.localPosition.x, transform.localPosition.y + Mathf.Cos (Time.time * 10) / 150, transform.localPosition.z);
-
 		transform.Rotate (0, 0, 1);
 	}
 

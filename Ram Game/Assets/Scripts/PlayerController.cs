@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour {
 
 	private float dashIntensity;
 	private Rigidbody2D rb;
-	private float moveInput;
+	private float horizInput;
 	private bool isGrounded;
 	private int dashDuration = 15;
 	private int dashCounter;
@@ -34,9 +34,10 @@ public class PlayerController : MonoBehaviour {
 
 	void Movement () {
 
-		moveInput = Input.GetAxisRaw ("Horizontal");
-		rb.velocity = new Vector2 ((moveInput * speed) + dashIntensity, rb.velocity.y);
+		horizInput = Input.GetAxisRaw ("Horizontal");
+		rb.velocity = new Vector2 ((horizInput * speed) + dashIntensity, rb.velocity.y);
 
+		//flip the player's sprite based on the velocity
 		if (rb.velocity.x > 0) {
 			transform.localScale = new Vector3 (1, transform.localScale.y, transform.localScale.z);
 		}
@@ -74,7 +75,7 @@ public class PlayerController : MonoBehaviour {
 
 	void Animations () {
 
-		animator.SetFloat ("Speed", Mathf.Abs (moveInput));
+		animator.SetFloat ("Speed", Mathf.Abs (horizInput));
 		animator.SetBool ("IsJumping", !isGrounded);
 		animator.SetBool ("isDashing", !allowDash);
 	}
