@@ -9,7 +9,7 @@ public class CompleteLevel : MonoBehaviour {
 	public Text levelCompleteText;
 	public int newLevel = 0;
 	private bool gotoNextLevel = false;
-	private int waitTimer = 200;
+	private float waitTimer = 3;
 
 	void Awake () {
 		levelCompleteText.enabled = false;
@@ -22,7 +22,7 @@ public class CompleteLevel : MonoBehaviour {
 
 	void Update () {
 		if (gotoNextLevel) {
-			waitTimer--;
+			waitTimer-=Time.deltaTime;
 			if (waitTimer < 0) {
 
 				SceneManager.LoadScene (newLevel);

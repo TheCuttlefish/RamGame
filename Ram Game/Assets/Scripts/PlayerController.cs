@@ -16,8 +16,8 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody2D rb;
 	private float horizInput;
 	private bool isGrounded;
-	private int dashDuration = 15;
-	private int dashCounter;
+	private float dashDuration = 0.2f;
+	private float dashCounter;
 
 	void Start () {
 
@@ -60,12 +60,13 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetButtonDown ("Dash") && allowDash) {
 
 			allowDash = false;
+			
 			dashCounter = 0;
 			dashIntensity = dash * transform.localScale.x;
 		}
 
 		if (dashCounter < dashDuration) {
-			dashCounter++;
+			dashCounter += Time.deltaTime;
 		} else {
 			dashIntensity = 0;
 			allowDash = true;
