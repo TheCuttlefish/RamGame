@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -18,14 +19,17 @@ public class PlayerController : MonoBehaviour {
 	private bool isGrounded;
 	private float dashDuration = 0.2f;
 	private float dashCounter;
-
+	private bool gameOver = false;
 	void Start () {
 
 		rb = GetComponent<Rigidbody2D> ();
 	}
 
 	void Update () {
-		
+
+		ResetGame();
+
+        if (gameOver) return;
 		Movement ();
 		Jump ();
 		Dash ();
@@ -46,6 +50,14 @@ public class PlayerController : MonoBehaviour {
 		}
 
 	}
+
+	public void GameOver()
+	{
+		gameOver = true;
+		rb.gravityScale = 10;
+		rb.drag = 10;
+		GetComponent<SpriteRenderer>().enabled = false;
+    }
 
 	void Jump () {
 		
@@ -81,4 +93,10 @@ public class PlayerController : MonoBehaviour {
 		animator.SetBool ("isDashing", !allowDash);
 	}
 
+
+    private void ResetGame()
+    {
+		if(Input.GetKeyDown (KeyCode.R)) 
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
